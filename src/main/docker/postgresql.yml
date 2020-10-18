@@ -1,0 +1,12 @@
+version: '2'
+services:
+  letsvoteoauth-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/LetsVoteOAuth/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=LetsVoteOAuth
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
